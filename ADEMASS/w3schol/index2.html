@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array metodos</title>
+</head>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>Looping an Array</h2>
+
+<p id="demo"></p>
+
+<h3>utilizando foreach</h3>
+<p id="demo1"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango", "lemon"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+
+let text1 = "<ul>";
+fruits.forEach(listaFunction);
+text1 += "</ul>";
+
+function listaFunction(value) {
+  text1 += "<li>" + value + "</li>";
+}
+document.getElementById("demo1").innerHTML = text1;
+</script>
+</body>
+</html>

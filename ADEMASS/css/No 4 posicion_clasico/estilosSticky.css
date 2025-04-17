@@ -1,0 +1,23 @@
+*{
+    padding: 0;/*para quitar el paddin y margen por defecto*/
+    margin: 0;
+}
+
+
+.card{
+    position: relative;
+    background-color: red;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+}
+.card h3{
+    position: sticky;/*se posiciona como relativo pero cuando se mueve el scroll se 
+    vuelve fixed, utilizado en los menu de navegacion*/
+    background-color: blueviolet;
+    color: white;
+    top: 0px;
+    left: 200px;
+
+}

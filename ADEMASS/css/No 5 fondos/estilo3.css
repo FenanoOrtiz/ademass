@@ -1,0 +1,13 @@
+.card{
+    width: 300px;
+    height: 300px;
+    background:linear-gradient(347deg, rgba(36,3,0,1) 0%,
+     rgba(91,82,75,1) 21%, rgba(141,138,135,1) 38%,
+      rgba(227,201,197,0.9500175070028011) 61%,
+       rgba(222,142,138,1) 75%, rgba(8,30,34,1) 100%);
+    /*utilizamos una pagina generadora de degradados: css gradien 
+    generator https://cssgradient.io/*/
+}
+.card h1{
+ color: rgba(227,201,197,0.9500175070028011);
+}

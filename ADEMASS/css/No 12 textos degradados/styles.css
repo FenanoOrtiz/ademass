@@ -1,0 +1,28 @@
+
+
+h1{
+    font-family: automove;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}
+body{
+    background-color: #121214b0;
+}
+.mi-texto{
+    background: radial-gradient(circle, rgba(36,33,0,1) 0%, 
+    rgba(9,38,121,1) 35%, rgba(183,195,24,1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+@font-face {
+    font-family:auto_motive ;
+    src: url(./fonts/Auto_Motive.ttf);
+}
+@font-face {
+    font-family:automove ;
+    src: url(./fonts/Automove\ Reg.otf);
+}

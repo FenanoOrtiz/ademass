@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Ejemplos</title>
+</head>
+<body>
+	<p>El metodo pop() elimina el ultimo elemento del array</p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+
+	<h3>acceder a los elementos del array con at() metodo</h3>
+	<p id="demo5"></p>
+
+	<h3>join() se comporta igual que toString pero se puede escoger el separador</h3>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+
+
+	<h3>push() metodo agrega un elemento nuevo al final del array</h3>
+	<p id="demo8"></p>
+	<p id="demo9"></p>
+
+	<h3>shift() metodo elimina el primer elemento  del array</h3>
+	<p id="demo10"></p>
+	<p id="demo11"></p>
+
+	<h3>unshift() metodo agrega un elemento al inicio del array y desplaza lo otros elementos</h3>
+	<p id="demo12"></p>
+	<p id="demo13"></p>
+
+	<script>
+		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+		document.getElementById('demo1').innerHTML = fruits;
+		let fruitsResult = fruits.pop();
+		document.getElementById('demo2').innerHTML = fruits;
+		document.getElementById('demo3').innerHTML = `el elemento que se quito del array es ${fruitsResult}`;
+		let fruitsString = fruits.toString();
+		//console.log(typeof fruitsString);
+		document.getElementById('demo3').innerHTML = `el array que se convierte en string es: ${fruitsString} su tipo de variable es ${typeof fruitsString}`;
+
+		let fruit = fruits.at(0);
+		document.getElementById('demo5').innerHTML = `se accede por medio de let fruit = fruits.at(0): ${fruit} y  fruits.at(-1): ${fruits.at(-1)}`;
+
+		fruitsString = fruits.join(" ");
+		document.getElementById('demo6').innerHTML = `se convierte en String con seprador de espacio: ${fruitsString}`;
+		fruitsString = fruits.join("*");
+		document.getElementById('demo7').innerHTML = `se convierte en String con seprador de asterisco: ${fruitsString}`;
+
+		fruits.push("Mango");
+		document.getElementById('demo8').innerHTML = `se agrega el elemento Mango al array: ${fruits}`;
+		fruits.push("Papaya");
+		document.getElementById('demo9').innerHTML = `se agrega el elemento Papaya al array: ${fruits}`;
+
+		fruitsResult = fruits.shift();// retorna el valor del elemento eliminado
+		document.getElementById('demo10').innerHTML = `se elimina el primer elemento, el array queda así: ${fruits}`;
+		document.getElementById('demo11').innerHTML = `el elemento  eliminado es: ${fruitsResult}`;
+
+		let fruitsUnshift = fruits.unshift("Lemon");
+		document.getElementById('demo12').innerHTML = `se agrega al primer elemento Lemon, el array queda así: ${fruits}`;
+	document.getElementById('demo13').innerHTML = `unshift devuelve la cantidad de elementos con los que queda el array: ${fruitsUnshift}`;
+	
+</script>
+
+</body>
+</html>

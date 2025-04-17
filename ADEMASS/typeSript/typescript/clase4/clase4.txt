@@ -1,0 +1,12 @@
+
+1- para crear el paqckege.jso desde la terminal ejecuto >npm init -y
+
+2- Instala TypeScript: Luego, instala TypeScript como una dependencia de desarrollo
+> npm install typescript --save-dev
+
+3-se crea el archivo json con la configuracion basica pero no me funciono
+desde la terminal de visual me toco desde cmd
+
+4- luego se instala el paquete uuid con el comando >npm install uuid
+
+

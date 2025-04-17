@@ -1,0 +1,97 @@
+**** MENU DEL NIVEL MID LEVEL ****
+
+00:00 - Introducción
+
+--------- CAPITULO 7 ---------
+
+1:57 - Apertura del capitulo 7
+4:57 - Objeto Window
+7:25 - Open, Close, Closed y Stop
+10:52 - Alert, Print, Prompt y Confirm
+13:35 - Screen y Scroll
+29:31 - Location
+36:38 - Historia de cofla 7
+
+--------- CAPITULO 8 ---------
+
+44:17 - Apertura del capitulo 8
+46:35 - Pestaña Elements
+1:06:26 - Pestaña Resources
+1:15:51 - Pestaña Network
+1:27:33 - Pestaña Timeline/Preformance
+
+--------- CAPITULO 9 ---------
+
+1:45:29 - Apertura del capitulo 9
+1:52:18 - Eventos
+1:54:00 - Handlers, Listeners y Objeto Event
+2:03:08 - Event Flow (Bubbling y Capturing)
+2:08:44 - StopPropagation
+2:10:09 - Mouse Events
+2:19:14 - Key Events
+2:23:36 - Interface Events
+2:40:25 - Timers 
+2:45:34 - Historia de Cofla 9 problema A
+3:16:35 - Historia de Cofla 9 problema B
+
+--------- CAPITULO 10 ---------
+
+3:31:54 - Apertura del capitulo 10
+3:33:27 - Control de flujo y manejo de errores
+3:38:51 - Sentencia Switch
+3:45:31 - Excepciones 
+3:48:27 - Try & Catch
+3:56:17 - Finally
+4:03:16 - Historia de Cofla 10
+
+--------- CAPITULO 11 ---------
+
+4:31:16 - Apertura del capitulo 11
+4:34:16 - ¿Cuando algo se vuelve obsoleto?
+4:43:09 - Metodos de cadenas obsoletos
+4:49:04 - Detectar navegadores obsoletos
+4:50:26 - Recomendaciones
+
+--------- CAPITULO 12 ---------
+
+4:52:34 - Apertura del capitulo 12
+4:57:53 - Callbacks
+5:16:25 - Promesas
+5:35:03 - Await & Async
+5:42:47 - Historia de Cofla 12
+
+--------- CAPITULO 13 ---------
+
+5:58:04 - Apertura del capitulo 13
+6:04:30 - Peticiones HTTP
+6:08:54 - Datos estructurados (JSON)
+6:18:52 - AJAX
+6:24:43 - XMLHTTPRequest, Peticiones, etc
+6:43:53 - Diferencias entre GET y POST
+6:52:37 - Fetch
+7:10:07 - Librería Axios
+7:25:42 - Fetch y Axios con Async & Await
+7:44:07 - Historia de Cofla 13
+
+------- CIERRE DEL NIVEL MID LEVEL -------
+
+7:52:49 - Próximo nivel y felicitaciones
+7:53:22 - Agradecimientos especiales
+7:56:14 - Frase final y créditos
+
+
+********** CORRECCIONES **********
+
+Ninguna por ahora
+
+********** SOLUCIONES DE COFLA *************
+ https://github.com/soydalto/curso-de-...
+
+************** SIGUIENTE NIVEL ***************
+ https://soydalto.com
+
+********** Seguime en INSTAGRAM ************
+  / soydalto  
+
+**** CANAL DE EMPRENDIMIENTOS *****
+Dalto Emprende: https://goo.gl/c8xn2F

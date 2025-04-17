@@ -1,0 +1,71 @@
+/*posicionamiento clasico*/
+
+/*1. static: es la posicion en orden que esta la pagina por defecto
+no  permite modificar su posicion */
+/*h3{
+    position: static;
+    top: 50px;/*no modifica porque esta en static*/
+    /*padding: 15px;
+    background-color: red;
+    color: white;
+
+
+/*}
+/*posicion relativa: esta posicion permite modificar su lugar por
+medio de top, bottom, left y right*/
+/*p{
+    position: relative;
+    top: 50px;
+    padding: 15px;
+    background-color: red;
+    color: white;
+}
+/*posicion absoluta, ingora la posicion natural y se ubica en la ubicacion
+con respecto al elemento padre o el elemento que no contenga una posicion 
+estatica y se ubica por medio de modificadores top, left, right o buttom*/
+.card{
+    position: relative;
+    background-color: brown;
+    width: 50vw;
+    height: 50vw;
+    margin: 5px;
+    top: 50px;
+    border: solid 2px black;
+    padding: 50px;
+    font-size: 18px;
+    left: 2px;
+
+    
+
+}
+.card p{
+    position: absolute;
+    font-size: 1.5em;
+    top:6em;
+    left: 0;
+    color: aliceblue;
+    margin: 20px;
+    text-align: justify;
+    padding: 20px;
+    
+}
+.card h3{
+    position: absolute;
+    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.096);
+    top: 0;
+    left:2em;
+    font-size: 2.5em;
+}/*de esta forma podemor ubicar un elemento dentro del otro en cuaquier lugar*/
+/*posicion fija (position: fixed;) se ubica solo en una posicion
+por medio de modificadores sin importar su elemento padre o que la 
+contenga */
+.card h2{
+    position: fixed;
+    background-color: blueviolet;
+    color: white;
+    top: 0;
+    left: 8.5em;
+}
+
+/*19:21*/

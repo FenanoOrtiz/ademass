@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplos de transform</title>
+    <style>
+        .rotacion{
+            width: 100px;
+            height: 100px;
+            background-color:greenyellow;
+            transition: transform 1.5s ease;
+        }
+        .rotacion:hover{
+             transform: rotate(180deg); /*gira el elemento 45° */
+        }
+        .escalar{
+            width: 100px;
+            height: 100px;
+            background-color:rgb(78, 47, 255);
+            transition: transform 1.5s ease;
+        }
+        .escalar:hover{
+            transform: scale(1.5);
+        }
+        .traslada{
+            width: 100px;
+            height: 100px;
+            background-color:rgba(255, 123, 47, 0.651);
+            transition: transform 1.5s ease;
+        }
+        .traslada:hover{
+            transform: translateX(100px);
+        }
+        .inclina{
+            width: 100px;
+            height: 100px;
+            background-color:rgba(224, 15, 15, 0.651);
+            transition: transform 1.5s ease;
+        }
+        .inclina:hover{
+            transform: skewX(-20deg);  /*inclina el elemento en x*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="rotacion"></div><br><br>
+    <div class="escalar"></div><br><br>
+    <div class="traslada"></div><br><br>
+    <div class="inclina"></div><br><br>
+    
+</body>
+</html>

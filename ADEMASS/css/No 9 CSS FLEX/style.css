@@ -1,0 +1,29 @@
+/*CSS FLEX*/
+*{
+    margin: 0;
+    padding:0;
+    
+    box-sizing: border-box;
+}
+
+
+main{
+    background-color: blue ;
+    width: 100vw;/*100 % tamaño virtual de la pantalla a lo ancho*/
+    height: 100vh;/*100 % tamaño virtual de la pantalla a lo alto*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap:wrap;
+}
+.card{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px; 
+}

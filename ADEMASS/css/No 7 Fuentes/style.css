@@ -1,0 +1,39 @@
+/*pagina para tipografia www.dafont.com, se descargan las fuentes en la 
+carpeta font del proyecto y se agregan a estilo por medio de @font-face*/
+h1{
+    font-family: copyduck;
+}
+p{
+    font-family: fires;
+}
+h2{
+    font-family:qunaden;
+}
+#p2{
+    font-family:simplesky ;
+    font-size: 50px;
+}
+#h2auto{
+    font-family: simple;
+    font-size: 50px;
+}
+@font-face{
+    font-family: copyduck;
+    src: url('./fonts/Copyduck.ttf')
+}
+@font-face {
+    font-family: fires;
+    src: url(./fonts/FIRES\ PERSONAL\ USE.ttf);
+}
+@font-face {
+    font-family:qunaden;
+    src: url('./fonts/Qunaden.otf');
+}
+@font-face {
+    font-family: simplesky;
+    src: url('./fonts/Simplesky.otf');
+}
+@font-face {
+    font-family: simple;
+    src: url('fonts/Simplesky.otf');
+}

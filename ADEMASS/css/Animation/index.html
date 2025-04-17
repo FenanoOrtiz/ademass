@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplos de trancision</title>
+    <style>
+        .figuras{
+            display: flex;
+            justify-content: space-around;
+        }
+        .circulo{
+            width: 100px;
+            height:100px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            transition: border-radius 0.5s ease, background-color 0.5s ease-in;
+           
+        }
+       .cuadrado{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: border-radius 0.5s ease, background-color 0.5s ease;
+
+       }
+       .circulo:hover{
+         border-radius: 0;
+         background-color: brown;
+
+       }
+       .cuadrado:hover{
+        border-radius: 50%;
+        background-color: aqua;
+       }
+    </style>
+</head>
+<body>
+    <div class="figuras">
+        <div class="circulo"></div>
+        <div class="cuadrado"></div>
+    </div>
+    
+</body>
+</html>

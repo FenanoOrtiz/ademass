@@ -1,0 +1,45 @@
+/*estilo a las listas*/
+ul{
+   display: flex;
+   justify-content: space-around;
+    list-style-type: none;/*modifica los señaladores de la lista, o
+    los elimina con "none"*/
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+/*decoracion de los enlaces*/
+ a{
+    text-decoration:none;
+    color: rgba(235, 219, 219, 0.904);
+    
+ }
+ /*cambio de cursor cuando pasa por encima del elemento*/
+ p{
+    cursor:auto;
+    
+ }
+ li{
+    display: inline;    
+    
+ }
+ a:hover{/*recordar  de pseudo clases*/
+    background-color: blueviolet;
+    color: black;
+ }
+ body{
+   position: relative;
+   background-color: aqua;
+ }
+ div{
+   /* position: absolute; 
+    left: 20vw;*/
+    margin: 0 auto;
+    width: 500px;
+    height:100px;
+    background-color: beige;
+    overflow-y:scroll ;/*lo que se sale de la caja o de desborda puede ser
+    en el eje y o x el overflow*/
+ }
+ 

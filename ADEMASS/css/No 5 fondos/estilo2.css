@@ -1,0 +1,53 @@
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-image:url('enfermera.jpg') ;/*imagen de fondo*/
+    /*disposicion de la imagen*/
+    /*background-position:50% ;/*modifica posicion la desplaza fondo imagen*/
+    background-size:cover;/*tamaño de imagen: cover la imagen se reduce
+    al tamaño de la etiqueta, conteint */
+    margin: 0;
+    padding: 0;
+    /* border: blue solid 2px; */
+    border-radius: 10px;
+    box-shadow: -5px 0px 31px 1px #21B9C6;
+}
+/* Efecto de Sombra: se consigue con box-shadow añade efecto de sombra alrededor del marco 
+de un elemento a traves de este enlace se consiguen los valores para la propiedad
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Box-shadow_generator */
+
+.card h1{
+    position: absolute;
+    left: 30%;
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: rgba(4, 4, 88, 0.822);
+}
+
+.card1{
+    position: absolute;
+    left: 350px;
+    top: 8px;
+    width: 300px;
+    height: 300px;
+    background-image:url('doctor.jpg') ;/*imagen de fondo*/
+    /*disposicion de la imagen*/
+    /*background-position:50% ;/*modifica posicion la desplaza fondo imagen*/
+    background-size:cover;/*tamaño de imagen: cover la imagen se reduce
+    al tamaño de la etiqueta, conteint */
+    margin: 0;
+    padding: 0;
+    /* border: blue solid 2px; */
+    border-radius: 10px;
+    box-shadow: 0px 5px 11px 8px #B0B299;
+}
+.card1 h1{
+    position: absolute;
+    left: 30%;
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: rgba(4, 4, 88, 0.822);
+}

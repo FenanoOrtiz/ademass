@@ -1,0 +1,64 @@
+pagina de documentacion typescript
+tarea: leer manual de typescript
+
+https://www.typescriptlang.org/docs/handbook/intro.html
+
+para intalar typescript se ejecuta en simbolos del sitema lo siguiente: npm install -g typescript 
+despues se debe reiniciar la pc, antes de instalar typescript hay que asegurarse que este instaldo el node.js
+se comprueba desde la consola con el comando node -vs
+
+Para crear una nueva carpeta en la terminal digitamos 
+>mkdir clase0
+ingresmos a la carpeta clase0 por medio de 
+>cd clase0
+
+para iniciar nuestro proyecto digitamos 
+
+>clase0> tsc --init
+crea el archivo json de la configuracion
+Created a new tsconfig.json with:
+                                                                                                                     TS
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+  ahora digitamos 
+  clase0>code .
+  nos abre el tsconfig en visual studio code
+
+  /*
+
+function hola(){
+    console.log(`hola Fernando, Bienvenido`);
+}
+
+hola()
+// esta funcion se ejecuta en consola por medio de node index.ts y corre 
+//perfectamente pero si ahora hacemos lo siguiente
+*/
+function hola(nombre:string){
+    console.log(`hola ${nombre}, Bienvenido`);
+}
+
+hola('Fernando')
+
+//ahora ejecutamos en consola con el comando clase0>node index.ts
+//nos muestra un error porque ya es un archivo tipescript y se debe conpilar
+//para que se vuelva un archivo javascript
+//digitamos tsc asi: clase0>tsc
+//de esa forma ya queda compilado y crea un archivo js en nuestra carpeta
+//ahora ejecutamos desde linea de comandos el archivo js
+//clase0>node index.js
+// esto pasa porque es un lenguaje 100% tipado quiere decir que siempre
+// se debe definir el tipode variable
+
+//Para que el archivo se trabaje en otra carpeta definimos la carpeta en
+//tsconfig.json en 
+// "rootDir": "./src",descomentamos esta linea agregando el nombre de la 
+//carpeta y si queremos que compile en otra carpeta diferente descomentamos
+// // "outDir": "./dist",y agregamos el nombre de la carpeta
+
+cursos en https://www.gyata.ai/typescript

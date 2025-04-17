@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="backend/for.php" method="post" enctype="multipart/form-data">
+        <label for="username">Nombre de Usuario</label><br>
+        <input type="text" name="username" id="username" placeholder="eje: miusuario" value="por defecto">
+        <br><br>
+        <select name="pais" id="" multiple>
+            <option value="es">Esapaña</option>
+            <option value="com">Colombia</option>
+            <option value="pe">Peru</option>
+            <option value="me">Mexico</option>
+            <option value="Chile">Chile</option>
+            <option value="arg">Argentina</option>
+            <option value="cu">Cuba</option>
+        </select><br><br>
+        
+        <!--radio botons-->
+        <input type="radio" name="comida" value="arroz" id="arroz">
+        <label for="arroz">arroz</label>
+        <input type="radio" name="comida" value="pollo" id="pollo">
+        <label for="pollo">pollo</label><br><br>
+        
+        <!--checkbox-->
+        <input type="checkbox" name="terminos" value="yes" id="terminos">
+        <label for="terminos">Acepto los terminos y condiciones</label><br><br>
+        
+        <!--Rangos--> 
+        <input type="range" name="porcentaje" min="0" max="100"><br><br>
+
+        <!--area de texto-->
+        <textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10" maxlength="500" 
+        placeholder="escribe tu comentario" required></textarea><br><br>
+
+        <!--validaciones iniciales antes de enviar
+        required: significa que es obligatorio se puede colocar en todos los 
+        item del formulario-->
+        <!--Enviar-->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

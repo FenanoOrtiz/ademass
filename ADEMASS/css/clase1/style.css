@@ -1,0 +1,97 @@
+
+h1{/*selector por etiqueta*/
+    color:red;
+    font-size: 72px;
+    
+}
+a{
+    font-size: 30px;
+    font-family: letra2;
+}
+
+p{/*selector por etiqueta*/
+    color: green;
+    font-size: 40px;
+    font-family: letra2;
+
+}
+.example{/*selector por clase <p class="example">*/
+    color: blue;
+
+}
+
+#my-p{/*selector por identificador <p id="my-p">*/
+    color: coral;
+}
+
+/*agrupar contenidos*/
+h2, h3, h4{
+    color: blueviolet;
+
+}
+/*anidamiento*/
+.card a{
+    color: aquamarine;
+    font-size: 50px;
+}
+nav ul li a{
+    color: black;
+}
+nav ul li a{
+    font-size: 72px;
+}
+/*selector de atributo*/
+
+a[href="/"]{/*(a que cumpla la condicion que href = "/")selector por medio
+    de condicion*/
+    color: red;
+}
+a[href="/service"]{
+    color:chocolate;
+}
+a[name="contact"]{
+    color: brown;
+} 
+
+*{/*es un modificador general, para los que no tienen ninguna regla o
+    diseño*/
+    color: rgb(31, 12, 204) ;
+    font-size: 32px !important;
+}
+/* h1{
+    color: blue !important; este modificador obliga a CSS a colocar
+    este diseño en todos los h1 sin importar otros diseños de la misma
+    regla que posea 
+    font-family: letra1;
+}  */
+.title{
+    color: red;
+}
+#title{
+    color: rgb(199, 194, 194);
+}
+
+button{
+    background-color: brown;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    font-family: letra2;
+}
+button:hover{/*:hover es un seudo selector, que hace que cuando el mouse 
+    pase por encima del boton cambie de color*/
+    background-color: black;
+}
+button:active{
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 0px;
+}
+@font-face {
+    font-family:letra1;
+    src: url('./Copyduck.ttf');
+} 
+@font-face {
+    font-family: letra2;
+    src: url('./Caramel.ttf');
+}

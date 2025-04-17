@@ -1,0 +1,25 @@
+/*z-index: hace que se vea adelante un elemento sobre el otro se utiliza
+un valor numerico por defecto es 0 esta por debajo, por encima es 1
+es util cuando queremos que un elemento se muestre siempre por ejemplo un
+menu*/
+.box1{
+    width: 150px;
+    height: 150px;
+    background-color: saddlebrown;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.box2{
+    width: 160px;
+    height: 120px;
+    background-color: blueviolet;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+}

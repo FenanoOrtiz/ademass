@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Texto en Input</title>
+</head>
+<body>
+    <input type="text" id="textInput" value="Prueba de selección de texto" style="width: 300px;">
+    <p id="result"></p>
+
+    <script>
+        const textInput = document.getElementById('textInput');
+        const result = document.getElementById('result');
+
+        textInput.addEventListener('select', () => {
+            const start = textInput.selectionStart;
+            const end = textInput.selectionEnd;
+            result.textContent = `Inicio de la selección: ${start}, Fin de la selección: ${end}`;
+        });
+    </script>
+</body>
+</html>

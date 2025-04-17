@@ -1,0 +1,8 @@
+tipo condicional:
+es un type que espera una condicion especifica el cual va actuar de una u otra forma
+dependiendo de la misma
+
+type "def" extend "dog"? dog : cat;
+
+
+

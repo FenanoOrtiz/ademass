@@ -1,0 +1,27 @@
+*{
+    padding: 0;/*para quitar el paddin y margen por defecto*/
+    margin: 0;
+}
+
+
+.card{
+    position: relative;
+    background-color: red;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+}
+.card h3{
+    float:inline-start; /*float permite que el elemento se pueda ubicar en una 
+    posicion a la     derecha o izquierda de su elemento padre*/
+    background-color: blueviolet;
+    color: white;
+    margin: 30px;
+
+}
+#clean{
+    color: green;
+    clear:both;/*limpia o evita que se apilen elementos a la izquierda o derecha
+    tambien puede ser solo a la izquierda o solo a la derecha*/
+} 

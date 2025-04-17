@@ -1,0 +1,37 @@
+/*Grid es 3 forma de posicionamiento ubicar como una rejilla se debe
+ primero tener un contenedor*/      
+.container{
+    display: grid;/*de esta forma el contenedor queda convertido en una
+    malla o grid, los elementos del grid son los hijos directos a los 
+    que le aplica las reglas de este grid al igual que flex*/
+    grid-template-rows:auto;/*filas que va tener nuestro grid y el tamaño de
+    la fila, medida puede ser pixeles, porcentaje , vm o fraccion fr*/
+    grid-template-columns:1fr 2fr 1fr;/*al igual que las filas para las
+    columnas, cantidad de columnas con su medida*/
+    grid-gap: 10px;/*para la separacion entre las celdas de la malla o grid*/
+    /*para alinear los elementos se utilizan las reglas de flex
+    alineacion horizontal: justify-item
+    alineacion vertica: aling-item*/
+    justify-items: center;
+    /* align-items: center; */
+    justify-content:center ;
+    align-content: center;
+}
+.grid-item li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    
+}
+.sub2{
+    display: none;
+   
+}
+#menu2:hover{
+    .sub2{
+        display: block;
+    }
+}

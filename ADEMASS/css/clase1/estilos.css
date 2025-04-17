@@ -1,0 +1,40 @@
+div, select {
+  margin: 8px;
+}
+
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+  color: red;
+} 
+
+/* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+  box-shadow: 0px 0px 7px 3px rgb(241, 112, 79);
+}
+/* box-shadow: La propiedad  en CSS se utiliza para agregar sombras a los elementos, 
+creando profundidad y efectos visuales atractivos. Aquí están los detalles:
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+1. Primer valor (5px): Desplazamiento horizontal de la sombra. 
+Un valor positivo la mueve hacia la derecha; un valor negativo, hacia la izquierda.
+2. Segundo valor (5px): Desplazamiento vertical. Un valor positivo mueve la sombra hacia abajo; 
+uno negativo, hacia arriba.
+3. Tercer valor (10px): El desenfoque de la sombra. Un número mayor hace que la 
+sombra sea más difusa y suave.
+4. Cuarto valor (rgba(0, 0, 0, 0.5)): El color de la sombra con transparencia. Puedes usar colores 
+estándar como  black o gray, pero con RGBA , controlas también el nivel de opacidad.*/
+
+/* Elemento Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+/* Elementos Option, cuando se seleccionan */
+option:checked,select{
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+/*Pseudoclases:
+
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+
+*/

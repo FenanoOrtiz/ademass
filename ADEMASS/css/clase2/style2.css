@@ -1,0 +1,15 @@
+body {
+    margin: 0; /* Reset */
+    
+ }
+  
+ /* .container {
+    width: 50vmax;
+    height: 50vmax;
+    background: indigo;
+  } */
+  .container {
+    width: 50vmin;
+    height: 50vmin;
+    background: indigo;
+  }

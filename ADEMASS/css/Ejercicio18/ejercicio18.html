@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú desplegable</title>
+    <style>
+        /* Estilos del menú */
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            position: relative;
+            display: inline-block;
+        }
+
+        .menu a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            display: block;
+        }
+
+        .menu a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Estilos del submenú */
+        .submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ecf0f1;
+            display: none;
+        }
+
+        .submenu a {
+            color: #2c3e50;
+        }
+
+        /* Mostrar el submenú al hacer hover */
+        .menu li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="#">Menú Principal</a>
+            <ul class="submenu">
+                <li><a href="#">Opción 1</a></li>
+                <li><a href="#">Opción 2</a></li>
+                <li><a href="#">Opción 3</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

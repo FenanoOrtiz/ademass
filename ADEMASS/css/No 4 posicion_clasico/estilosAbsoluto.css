@@ -1,0 +1,26 @@
+*{
+    padding: 0;/*para quitar el paddin y margen por defecto*/
+    margin: 0;
+}
+
+
+.card{
+    position: relative;
+    background-color: red;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.card h3{
+    position: absolute;/*esto se puede hacer siempre que el elemento 
+    padre en este caso card tenga una posicion relativa y no estatica o 
+    natural, si no hay un elemento que tenga poscion que no sea estatica
+    se posiciona con respecto al elemento     principal que es el body*/
+    background-color: blueviolet;
+    color: white;
+    bottom: 250px;
+    right: 250px;
+
+}

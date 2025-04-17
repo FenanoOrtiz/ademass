@@ -1,0 +1,36 @@
+
+body{
+	background-color: whitesmoke;
+}
+.content{
+	display:flex;
+}
+.title{
+	color: blue;
+	background-color: whitesmoke;
+	text-align: center;
+	padding: 50px;
+	width: 50%;
+	font-size: 80px;
+
+}
+.contentSubTitle{
+	width: 50%;
+	background-color: whitesmoke;
+	margin-block-start: 30px;
+	padding: 50px;
+	text-align: center;
+	font-size: 30px;
+
+}
+.subTitle2{
+	background-color: darkred;
+	color: white;
+
+}
+
+img{
+	align-content: center;
+	justify-content: center;
+	
+}

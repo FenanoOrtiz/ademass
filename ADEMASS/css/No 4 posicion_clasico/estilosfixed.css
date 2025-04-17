@@ -1,0 +1,28 @@
+/*un elemento posicionado con fixed se puede ubicar pero siempre su posicion es solo 
+relativa con el body no con su elemento padre*/
+/*17:59*/
+*{
+    padding: 0;/*para quitar el paddin y margen por defecto*/
+    margin: 0;
+}
+
+
+.card{
+    position: relative;
+    background-color: red;
+    padding: 15px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+}
+.card h3{
+    position: fixed;/*esto se puede hacer siempre que el elemento padre en este 
+    caso card tenga una posicion relativa y no estatica o natural, si no hay un elemento
+    que tenga poscion que no sea estatica se posiciona con respecto al elemento 
+    principal que es el body*/
+    background-color: blueviolet;
+    color: white;
+    bottom: 0px;
+    left: 200px;
+
+}

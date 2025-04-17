@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: brown;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:300px 300px 300px; 
+}    
+.div_1{
+    background-color: aqua;
+    width: 25vw;
+    height: 25vw;
+    margin: 5px;
+}
+.div_2{
+    background-color: rgb(17, 66, 66);
+    width: 25vw;
+    height: 25vw;
+    margin: 5px;
+}
+.div_3{
+    background-color: rgb(255, 136, 0);
+    width: 25vw;
+    height: 25vw;
+    margin: 5px;
+}

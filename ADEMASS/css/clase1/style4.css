@@ -1,0 +1,20 @@
+input[default]{
+    color: aqua;
+}
+input[default]+label{
+    color: red;
+} 
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;/* Tres columnas de 100px cada una */
+    grid-gap: 10px; /* Espacio entre las celdas de la cuadrícula */
+   
+  }
+  
+  .item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  

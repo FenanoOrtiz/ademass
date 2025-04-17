@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enlace a video</title>
+</head>
+<body>
+    <video controls autoplay loop>
+        <!--source es para diferentes formatos de video para 
+        trabajar en distintos navegadores
+        controls: para colocar controles
+        autoplay: para que se reproduzca apenas comienza la pagina
+        loop: para que cuando se termine el video se vuelva a 
+        reproducir-->
+        <source src="/video/playa.mp4" type="video/mp4">
+        <source src="/video/playa.ogg" type="video/ogg">
+        <source src="/video/playa.webm" type="video/webm">
+        Video no Soportado...
+    </video>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+las cookies son datos que se almacenan en el navegador
+existen diferentes tipos
+
+exceptuadas:
+* cookies de entrada de usuario
+* cookies de idenfificacion y autenticacion del usuario
+* cookies de seguridad del ususario
+* cookies de reproductor multimedia
+* cookies de sesión para equilibrar la carga
+* cookies de personalización de la interfaz de usuario
+* cookies de complemento (plug-in) para intercambiar contenidos sociales
+
+No exceptuadas
+
+el resto de cookies
+
+existen
+cookies propias:  son aquellas que se envian alequipo terminal del usuario desde el equipo o dominio gestionado por el propio editor y desde el que se presta el servicio solicitado por el usuario
+
+cookies de tercero: son aquellas que se envían al equipo terminal del usuario desde un equipo o dominio que no es gestionado por el editor, sino por otra entidad que trata los datos obtenidos a través de las cookies.
+
+cookies segun la finalidad
+analisis: permiten cuatificar el numero de usuarios y así realizar la medición y análisis estadistico de la utilización
+
+publicitarias: permiten la gestión de los espacios publicitairos que el editor haya incluido en la pagina web
+
+sociales: son necesarios para redes sociales externas (facebook, google, twiter, etc) controlan la interacción conlos widgets
+
+publicidad comportamental: almacena el comportamiento del usuario obtenido a traves de la observación continua de sus hábitos de navegación
+
+
+

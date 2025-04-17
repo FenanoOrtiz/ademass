@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica</title>
+</head>
+<body>
+    <h1>Registrar Usuario</h1>
+    <form action="index.html" method="post" >
+        <label for="usuario">Nombre de Usuario:</label>
+        <input type="text" name="usuario" id="usuario" required 
+        placeholder="ejemplo: miuser"/><br><br>
+        <label for="correo">Email:</label>
+        <input type="email" name="correo" id="correo" required
+        placeholder="ejemplo: miusur@ccc.es"><br><br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="contrasena" id="contrasena" required><br><br>
+        <label for="repContrasena">Repetir contraseña:</label>
+        <input type="password" name="repContrasena" id="repContrasena" required><br><br>
+        <label for="fechanacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fechanacimiento" id="fechanacimiento"><br><br>
+        <label for="texto">Cuenta algo sobre ti:</label>
+        <textarea name="texto" id="texto" cols="30" rows="10"></textarea><br><br>
+        <label for="donde">Cómo nos conosiste:</label>
+        <select name="donde" id="donde">
+            <option value="google">google</option>
+            <option value="insta">Instagram</option>
+            <option value="x">X</option>
+            <option value="youtube">Youtube</option>
+        </select><br><br>
+        <input type="submit" value="Registrarme">
+
+    </form>
+</body>
+</html>

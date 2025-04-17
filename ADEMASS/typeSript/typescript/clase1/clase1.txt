@@ -1,0 +1,38 @@
+let myStringVar  //si dejamos así sin definir que tipo de variable es al
+// pasar el cursor por encima vemos que marca que es de tipo any y se
+// puede colocar cualquier tipo de dato pero si le definimos un valor 
+//a esa variable automatica mente cambia a el tipo de ese valor asignado
+myStringVar=4
+myStringVar= 'Juan'
+let myStringVar = 'Pedro' vemos que automaticamente asigna el valor de myStringVar
+si tratamos de asignar un numero genera error
+
+al definir que tipo de variable es typescritp nos permite saber todos los metodos
+que sobres esta podemos aplicar simplemente colocando punto (.) despues de la
+variable
+
+para definir el tipo de variable se coloca dos puntos (:) seguido del tipo
+ejemplo
+
+let myStringVar: string
+
+si dejamos la variable sin definir el tipo ella toma por defecto el valor (any)
+y no podriamos utilizar ninguna propiedad.
+
+tambien se puede definir el tipo y el valor al tiempo
+
+let myStringVar: string = 'Juan'
+
+FUNCIONES
+
+function myName(){//si se crea asi la funcion al escribir el return el se asigna
+    //automaticamente a la funcion que es de tipo string si no tiene nada asigna
+    // que es de tipo void(vacio)
+    
+}
+Lo mejor para sacar ventaja de typescript es definir el tipo de funcion y definir
+los parametros
+
+
+
+

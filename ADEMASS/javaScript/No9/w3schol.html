@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>eventos</title>
+	<style type="text/css">
+		p{
+			font-size: 30px;
+			color: blue;
+		}
+		button{
+			font-size: 30px;
+			color: blue;
+			border: solid 2px orange;
+			border-radius: 10px;
+		}
+		button:hover{
+			color: black;
+		}
+		h1, h2{
+			color: blue;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>JavaScript HTML Events</h1>
+	<h2>The onclick atribute</h2>
+	<!-- onclick="document.getElementById('hora').innerHTML=Date()"(esto se remplazo
+		por script) -->
+	<button class="btnHora" >the time is?</button>
+	<p id="hora"></p>
+	<p id="demo" style="font-size: 60px; color: red;"></p>
+	<button class="btnStop">Detener Reloj</button>
+	<button class="btnStart">Iniciar Reloj</button>
+
+	<script>
+		// const hora= document.querySelector(".btnHora");
+		// hora.addEventListener("click",hora);
+		const detener = document.querySelector(".btnStop");
+		const btnHora= document.querySelector(".btnHora");
+		const iniciar = document.querySelector(".btnStart");
+		let intervalo= null;
+
+		btnHora.addEventListener("click",()=>{
+			btnHora.innerHTML= Date();
+		});
+
+
+		detener.addEventListener("click",()=>{
+			clearInterval(intervalo);
+		});
+			
+		iniciar.addEventListener("click",()=>{
+			intervalo = setInterval(time,1000);
+		});
+
+		const time = ()=>{
+			const hora = new Date();
+			const horaActual = hora.getHours()+":"+String(hora.getMinutes()).padStart(2, '0')+":"+String(hora.getSeconds()).padStart(2,'0');
+			const parrafo = document.getElementById("demo");
+			parrafo.innerHTML=horaActual;
+		}
+
+		
+		
+		
+		
+	</script>
+	
+
+	<!-- <button onclick="this.innerHTML=Date()">The times is?</button> -->
+
+</body>
+</html>

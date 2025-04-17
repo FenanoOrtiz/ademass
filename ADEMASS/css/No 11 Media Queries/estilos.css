@@ -1,0 +1,49 @@
+/*Media queries*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+.card h3{
+    text-transform: uppercase;/*pasa a mayuscula sostenida*/
+    color: #666;
+}
+.card p{
+        color: #666;
+}   
+h1{
+    color: rgb(97, 26, 26);
+    display: none;
+}     
+@media(max-width:800px){
+    .card{
+        background-color: red;
+    }
+    h1{
+        display: inline-block;
+    }
+    .card h3{
+        color: white;
+
+    }
+    .card p{
+        color:white;
+    }
+}

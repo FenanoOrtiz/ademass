@@ -1,0 +1,54 @@
+/*grid area nos permite definir en cada cuadro de la cuadricula diferentes
+areas, permite nombrar cada una de las areas*/
+.container{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+   
+    grid-template-areas:
+    "header header header"/*son las areas para las colomnas se indica que
+    en la primer fila las tres columnas seran de header*/
+    "sidebar content sidebar-two"/*cada columna tiene un nombre diferente*/
+    "footer footer footer";/*tambien ocupa las tres columnas*/
+    width: 100vw;
+    height: 100vh;
+}
+header{/*asignamos los nombre de las areas a las etiquetas*/
+    grid-area: header;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(110,98,217,0.958420868347339) 0%, rgba(223,143,134,1) 25%, rgba(22,187,213,1) 100%);
+}    
+.sidebar{
+    grid-area: sidebar;
+    background-color: aqua;
+    
+    
+}
+main{
+    grid-area: content;
+    background-color: rgb(194, 158, 105);
+   
+}
+.sidebar-two{
+    grid-area: sidebar-two;
+    background-color: cadetblue;
+    
+}
+footer{
+    grid-area: footer;
+    background-color: yellowgreen;
+   
+}
+header h1{
+    background: radial-gradient(circle, rgba(36,33,0,1) 0%, 
+    rgba(9,38,121,1) 35%, rgba(183,195,24,1) 100%);
+    color: transparent;/*estas tres instrucciones hacen el degradado del texto*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 100px;
+    font-family: fire;
+}
+@font-face {
+    font-family: fire;
+    src: url(./FIRES\ PERSONAL\ USE.ttf);
+}

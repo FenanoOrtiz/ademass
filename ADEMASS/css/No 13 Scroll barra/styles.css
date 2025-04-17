@@ -1,0 +1,31 @@
+/*modificar el scrollbar */
+/*pseudoelemnto webkit*/
+
+::-webkit-scrollbar{
+    width: 25px;/*anchura scroll*/
+    
+}
+/*personalizar la pista por donde se desplaza el scroll*/
+::-webkit-scrollbar-track{
+    background: #d11a1a;
+}
+/*personalizar la pastilla lo que se desplaza*/
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: blue;
+}
+/*hover, cuando se pasa por encima el mouse*/
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(141, 226, 43);
+}
+
+/*modificar el color al seleccionar el texto ::selection*/
+::selection{
+    color:rgb(211, 22, 22);
+    background: rgba(151, 240, 116, 0.938);
+}
+::-moz-selection{/*para qeu tambien aplique en el navegador moxila*/
+    color: red;
+    background: yellow;
+
+}

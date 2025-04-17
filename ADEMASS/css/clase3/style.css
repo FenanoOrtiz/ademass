@@ -1,0 +1,52 @@
+ p, h3, div,b{
+    /*regla borde general*/
+    /*border: 2px dotted red;primero la medida del borde, lo segundo es
+    el estilo y el terce valor es el color*/
+    /*display: para mostrar en bloque o en linea*/
+    /*display:inline-block;mezcla en bloque y en linea*/
+    /*display: none; hace que no se vean los elementos que tienen esa regla*/
+    /*borde de forma especifica*/
+    border: 3px;
+    border-style: double;
+    border-color: blueviolet;
+    border-top: 10px red double;
+    /*border-radios general*/
+    /*border-radius: 20px;border radios es para redondear las esquinas*/
+    /*border-radius: 20px 0px;/*redondea los bordes esquina sup. izq e inf der
+    y no redondea la esquina inf izq e sup der*/
+     /*border-radios especifico*/
+    border-top-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+h1{
+    margin: 10px;
+    padding: 100px;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    background-color: rgba(182, 224, 224, 0.562);
+    border-style: groove;
+    border-radius: 20px;
+    border-bottom-color: red;
+    border-top-color: yellow;
+    border-left-color: blue;
+    border-right-color: blue;
+    padding-left: 100px;
+
+
+}
+div{
+    padding: 25px;
+    padding-left: 50px;
+    padding-top: 29px;
+    padding-right: 70px;
+    padding-bottom: 5px;
+}
+p{
+    padding: 50px 50px;
+    margin: 50px 20px;
+    
+}

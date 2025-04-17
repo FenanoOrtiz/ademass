@@ -1,0 +1,25 @@
+Decoradores
+
+es una funcion que nos permite manejar anotaciones y metadatos
+sobre clase, propiedades y metodos
+
+se define así:
+@MyDecorator 
+o tambien:
+@MyDecorator("any")
+
+ejemplo 
+
+@AddAge(25) (decorador de clases)//se posiciona por encima de la declaracion de la clase
+class person{
+
+
+@ValidateAge(18) (decorador de atributos)//se posiciona por encima del metodo
+age!: number
+}
+
+greet(@IsString name: string){ (decorador de parametros)
+    console.log(name)
+}
+
+

@@ -1,0 +1,31 @@
+/*VARIABLES*/
+
+/*FONT*/
+
+
+
+
+
+
+
+/*COLOR*/
+
+
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+/*HEADER*/
+header{
+    background-image: url(./imagenes/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}

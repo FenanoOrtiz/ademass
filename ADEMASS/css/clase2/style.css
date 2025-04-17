@@ -1,0 +1,65 @@
+/*medidas*/
+/*porcentaje %*/
+/*pixeles px*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: brown;
+    width: 80vw;/*medida en pixeles*/
+    height: 100px;
+    
+}
+.child{
+    inline-size: 40vw;/*nuevas medidas logicas */
+    block-size: auto;
+    background-color: rgb(4, 46, 46);
+    /*width: 50%;/*porcentaje de su contenedor o donde esta ubicado el elemento*/
+   /*width: 10svw;
+    height: 10svh;
+    margin: 0;*/
+}
+/*medidas vw, vh, svw, svh
+vw viewport width: porcentaje visible del ancho de la ventana
+vh viewport height: porcentaje visible del alto de la ventana
+estas medidas sirven para que se adapte al tipo de pantalla
+https://lenguajecss.com/css/unidades-css/relativas-viewport/
+*/
+
+/*color
+1. formato: codigo hexadecimal #+codigo (6 caracteres)# los primeros do
+digitos el rojo, los otros dos el verde y los dos ultimos el azul, 
+se pueden anadir dos digitos mas para expresar la opacidad
+2. formato rgb 
+background-color: rgb(red, green, blue);el valor numerico en cada color
+tambien se puede rgba, siendo a la opacidad 0 transparente y 1 totalmente opago
+3. formato hsl
+hsl(matiz, %saturacion, %brillo) el cuarto valor entre 0 y 1 opacidad
+
+*/
+p{
+    /*color: #0408032d;*/
+    background-color: #dad9b1;
+    /*lighting-color: rgba(34, 64, 194, 0.623); */
+    /*background-color: hsla(35, 50%, 40%, 0.63);   */
+
+}
+
+/*MEDIDAS DE TEXTO
+EM Y REM
+em expresa una medida en base al tamaño de la fuente de un selector
+y rem el tamaño en base a la medida de la fuente general 
+
+
+*/
+html{
+    font-size: 50px;
+
+}
+div{
+    font-size: 18px;
+    margin: 8em;/*18 px por 3*/
+    margin-top: 2rem;/*50 px *2*/
+    
+}

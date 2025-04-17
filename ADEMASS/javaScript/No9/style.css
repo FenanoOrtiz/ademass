@@ -1,0 +1,28 @@
+body {
+	color: #222;
+	font-family: sans-serif;
+	
+}
+
+/*
+.contenedor-1{
+	padding: 30px;
+	background-color: red;
+}*/
+
+.input-prueba{
+	border: 1px solid black;
+	border-radius: spx;
+	padding: 6px;
+	color: #444;  
+	autline:none !important;
+	
+}
+.texto{
+	font-size: 30px;
+	width: 120%;
+	color: #777;
+}
+.texto b{
+	color: #0a0;
+}

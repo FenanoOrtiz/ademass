@@ -1,0 +1,70 @@
+**** MENU DEL NIVEL Master ****
+
+00:00 - Introducción
+
+--------- CAPITULO 14 ---------
+
+0:03:10 - Apertura del capitulo 14
+0:05:40 - Prototipos
+0:13:46 - Caracteristicas de los prototipos
+0:15:20 - Dunder Proto
+0:21:45 - Sobrescribir _proto_ vs método
+0:26:44 - Modo estricto (Strict Mode)
+0:53:35 - Funciones flecha
+01:05:17 - This contextual
+01:16:07 - Recursividad
+01:19:12 - Clausuras (o closures)
+01:25:04 - Parametro Rest
+1:27:49 - Destructuración (ver INFO EXTRA 1.1)
+1:28:53 - Operador ternario (o condicional)
+
+
+--------- CAPITULO 15 ---------
+
+01:40:32 - Apertura del capitulo 15
+01:45:44 - APIs
+01:47:46 - Objeto Date
+2:04:43 - Reloj con Date
+2:13:09 - LocalStorage y SessionStorage
+2:21:20 - Definir idioma con LocalStorage
+2:29:06 - Drag & Drop
+2:46:47 - Texturizador con Drag & Drop
+2:56:56 - Geolocalization
+3:05:31 - History API
+3:17:59 - FileReader
+3:34:02 - Cargar galería dinámicamente
+3:42:24 - FileReader + Drag & Drop
+4:11:49 - IndexedDB
+4:46:41 - IndexedDB + Drag & Drop
+
+
+--------- CAPITULO 16 ---------
+
+5:12:44 - Apertura del capitulo 16
+5:15:07 - MatchMedia
+5:26:41 - Intersection Observer
+5:41:42 - Lazy Load
+6:11:42 - Notifications 
+6:16:56 - Web Workers
+6:35:53 - Same Origin Politic
+6:47:22 - Objeto Navigator
+7:03:47 - Memoization
+7:14:44 - Caché
+7:35:40 - Service Workers
+7:56:59 - Reto del Chat Realtime
+7:59:26 - Cachear sitio web y mostrarlo offline
+8:11:16 - Cookies
+8:35:36 - Crear aviso de uso de cookies
+8:43:31 - Objeto Screen
+8:50:17 - Objeto Canvas
+9:07:58 - Crear un web paint
+9:19:41 - Próximo nivel y felicitaciones
+9:22:16 - Agradecimientos especiales
+9:22:49 - Frase final y cierre de nivel
+
+
+-------- INFO EXTRA --------
+
+1.1 Hubo un error y se salteó el video de destructuración, pero no hay de que preocuparse, lo pondremos en el Nivel Senior.
+
+1.2 ColorDepth y PixelDepth olvidé explicarlos al ver el objeto Screen, nuevamente pueden quedarse tranquilos, también estará en el Nivel Senior.

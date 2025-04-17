@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escritura</title>
+</head>
+
+<body>
+    <h1>tablas</h1>
+    <table>
+        <caption>Mi primera tabla</caption><!--titulo-->
+        <tr>
+            <th>encabezado 1</th><!--encabezado-->
+            <th>encabezado 2</th>
+            <th>encabezado 3</th>
+            <th>encabezado 4</th>
+            <th>encabezado 5</th>
+        </tr>
+        <tr>
+            <td>celda 1</td>
+            <td>celda 2</td>
+            <td>celda 3</td>
+            <td>celda 4</td>
+            <td>celda 5</td>
+        </tr>
+    </table>
+    <br>
+
+    <!--atributos
+    colspan= sirve para unir  celdas horizontalmente o unir columnas
+    rowspan= sirve para unir celdas verticalmente o unir filas
+    etiquetas para agrupar:
+    <thead></thead> cabecera de la tabla
+    <tbody></tbody> cuerpo de la tabla
+    <tfoot></tfoot> pie de la tabla 
+    estos se utilizan para diseño en CSS   
+    -->
+    
+    <table border="1">
+        <tr>
+            <th>encabezado</th>
+            <th>encabezado</th>
+            <th>encabezado</th>
+        </tr>
+        <tr>
+            <td colspan="2">celda</td>
+
+            <td rowspan="2">celda</td>
+        </tr>
+        <tr>
+            <td>celda</td>
+            <td>celda 3</td>
+
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <p><strong>Ejemplo de tabla con atributos</strong></p>
+    <hr>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th colspan="2">JUAN</th>
+                <th colspan="2">RAUL</th>
+            </tr>
+            <tr>
+                <th>Fecha</th>
+                <th>Ingresos</th>
+                <th>Gastos</th>
+                <th>Ingresos</th>
+                <th>Gastos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>15-1-24</th>
+                <td>150</td>
+                <td>23</td>
+                <td>200</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>15-1-24</th>
+                <td>150</td>
+                <td>23</td>
+                <td>200</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>15-1-24</th>
+                <td>150</td>
+                <td>23</td>
+                <td>200</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>15-1-24</th>
+                <td>150</td>
+                <td>23</td>
+                <td>200</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>15-1-24</th>
+                <td>150</td>
+                <td>23</td>
+                <td>200</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td align="center" colspan="2">635</td>
+                <td align="center" colspan="2">750</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>

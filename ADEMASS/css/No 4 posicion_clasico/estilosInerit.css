@@ -1,0 +1,27 @@
+*{
+    padding: 0;/*para quitar el paddin y margen por defecto*/
+    margin: 0;
+}
+
+
+.card{
+    position: relative;
+    background-color: red;
+    top: 100px;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+}
+.card h3{
+    position: inherit;/*hereda  la posicion de su elemento padre, en este caso la posicion
+    de card que es relativa*/
+    background-color: blueviolet;
+    color: white;
+    top: 50%;
+    left: 40px;
+    text-decoration: dotted;
+    text-align: center;
+    width: 40%;
+
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body>
+    <!--HEADER-->
+
+    <header><!--en el header vamos a utilizar flex
+    como aplica para los hijos uno sera el menu de navegacion nav
+    pero para que el resto este en un solo bloque lo agrupamos 
+    en un DIV-->
+        <nav>
+            <img src="./imagenes/logo.png" width="78" height="72">
+            <ul class="menu-screen">
+                <li><a href="#" class="selected">home </a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Computer </a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Products</a></i></li>
+                <li><a href="#">Contact Us</a>
+                <li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+            <img class="menu-movile" src="./imagenes/menu_icon.png" alt="icono menu" width="36" height="21">
+        </nav>
+        <div class="header-content">
+            <div class="header-content-text">
+                <h3 class="header-subtitle">Computer and Laptop</h3>
+                <h1 class="header-title">Accesorios</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Culpa labore alias provident quas sit laboriosam excepturi voluptas
+                    nam? Explicabo ea earum tenetur saepe possimus eveniet molestiae architecto
+                    iste veniam iure.
+                </p>
+                <div class="header-content-btns">
+                    <a href="#" class="btn">By Now</a>
+                    <a href="#" class="btn">Contact</a>
+                </div>
+            </div>
+            <img class="header-img" src="./imagenes/pct.png" width="696" height="278">
+        </div>
+    </header>
+    <!--END HEADER-->
+
+    <!--cARDS SECTION-->
+    <section class="cards">
+        <div class="card">
+            <img src="./imagenes/thr.png" alt="">
+            <h5>Computer</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores libero optio aspernatur
+                nam non accusamus blanditiis molestias repellendus eum nostrum laudantium molestiae, soluta ratione
+                nesciunt iure cum. Suscipit, aspernatur?</p>
+        </div>
+        <div class="card">
+            <img src="./imagenes/thr1.png" alt="">
+            <h5>Laptop</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores libero optio aspernatur
+                nam non accusamus blanditiis molestias repellendus eum nostrum laudantium molestiae, soluta ratione
+                nesciunt iure cum. Suscipit, aspernatur?</p>
+        </div>
+        <div class="card">
+            <img src="./imagenes/thr2.png" alt="">
+            <h5>Tablet</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores libero optio aspernatur
+                nam non accusamus blanditiis molestias repellendus eum nostrum laudantium molestiae, soluta ratione
+                nesciunt iure cum. Suscipit, aspernatur?</p>
+        </div>
+    </section>
+    <!--END CARDS SECTION-->
+
+    <!--Products Section-->
+    <section class="products">
+        <h3 class="title-section">Our Products</h3>
+        <div class="products-container">
+            <div class="product-card">
+                <img src="./imagenes/product1.png" />
+                <a href="#">Computer</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/product2.png" />
+                <a href="#">Laptop</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/product3.png" />
+                <a href="#">Tablet</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/product4.png" />
+                <a href="#">Speakers</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/product5.png" />
+                <a href="#">Internet</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/product6.png" />
+                <a href="#">Hard Disk</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/product7.png" />
+                <a href="#">Rams</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/product8.png" />
+                <a href="#">Battery</a>
+            </div>
+            <div class="product-card">
+                <img src="./imagenes/product9.png" />
+                <a href="#">Drive</a>
+            </div>
+            <a href="#" class="btn-secondary">See More</a>
+        </div>
+
+    </section>
+    <!--End Products Section-->
+
+    <!--Banner Section-->
+    <section class="banner">
+        <div class="banner-content">
+            <div class="banner-content-text">
+                <h3 class="banner-subtitle">Every computer and laptop</h3>
+                <h1 class="banner-title">Up to 40% off!</h1>
+                <div class="header-content-btns">
+                    <a href="#" class="btn-primary-full">Shop Now</a>
+                </div>
+            </div>
+            <img class="header-img" src="./imagenes/pc.png" width="588" height="235">
+        </div>
+    </section>
+    <!--End Banner Section-->
+    <!--Reviews Section-->
+    <section class="reviews">
+        <h3 class="title-section">CUSTOMER REVIEW</h3>
+        <div class="reviews-container">
+            <img src="./imagenes/cos.png" width="40">
+            <h4>Sandy Miller</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt eveniet quas. Doloremque expedita
+                ut est
+                similique commodi? Quas deserunt necessitatibus quasi tenetur, totam corrupti eaque veniam velit vitae
+                debitis.
+            </p>
+        </div>
+
+    </section>
+    <!--End Reviews Section-->
+
+    <!--Form Section-->
+
+    <section class="contact" id="contact">
+        <h3 class="section-title-white">Contact Now</h3>
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="name" id="name" class="contact-input" placeholder="Name" />
+            <input type="text" name="email" id="email" class="contact-input" placeholder="Email" />
+            <input type="text" name="phone" id="phone" class="contact-input" placeholder="Phone Number" />
+            <div name="message" contenteditable="true" id="messaje" class="contact-textarea">Message</div>
+            <input type="submit" value="SEND" class="contact-btn" />
+
+        </form>
+    </section>
+
+    <!--End Form Section-->
+
+    <!--Footer Section-->
+
+
+    <footer>
+        <div class="footer-contect">
+
+            <div class="footer-card">
+                <img src="./imagenes/logo.png" width="78" height="72">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+
+            </div>
+            <div class="footer-card">
+                <h5>Abaout Us</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit hic natus placeat minima reiciendis
+                    neque!</p>
+            </div>
+            <div class="footer-card">
+                <h5>Contact Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat iure aut provident suscipit facere
+                    voluptate Repellat.</p>
+
+            </div>
+            <div class="footer-card">
+                <h5>Newsletter</h5>
+                <form method="post" action="#contact">
+                    <input class="sub-input" type="email" placeholder="Enter you email">
+                    <input type="submit" value="SUBSCRIBE" class="sub-btn">
+                </form>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>@ 2024 All rights reserved. Design by Free HTML Templates.</p>
+        </div>
+
+
+    </footer>
+    <!--End Footer Section-->
+
+</body>
+
+</html>

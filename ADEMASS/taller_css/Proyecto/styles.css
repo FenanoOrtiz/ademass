@@ -1,0 +1,555 @@
+/*www.free-css.com:paginas para tomar de ejemplo*/
+/*www.cssportal.com: ayudas e informacion*/
+
+
+/*************/
+/*Variables*/
+:root{
+    --primary-color:#4f4aa6;
+    --secondary-color:#48ca95;
+    --bg-color: #f7f7f7 ; 
+    --ligt-color:#fff;
+    --header-title-font:poppins-bold;
+    --text-font:poppins;
+    --menu-font: poppins-bold;
+    --section-title-font: poppins-semibold;
+    --dark-color: #000;
+    --banner-subtitle-font: poppins-ligth;
+    --banner-title-font:poppins;
+    
+}
+/*fuentes*/
+@font-face {
+    font-family: poppins;
+    src: url(./font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-bold;
+    src: url(./font/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins-extrabold;
+    src: url(./font/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: poppins-semibold;
+    src: url(./font/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: poppins-ligth;
+    src: url(./font/Poppins-Light.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font)
+
+}
+/*DISEÑO HEADER*/
+
+header{
+    
+    background-image: url(./imagenes/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;/*tamaño de navegador en su altura*/
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;/*quita los iconons de la lista*/
+}
+nav ul li{
+    padding: 10px;
+    
+}
+nav ul li a{
+    color:var(--ligt-color);
+    text-decoration: none;
+    font-family: var(--menu-font);
+    
+}
+nav ul li a:hover{/*psueudoselector cuando se pasa el raton por encima 
+    del enlace cambia de color*/
+    color: var(--secondary-color);
+
+
+}
+.selected{
+    color: var(--secondary-color);
+}
+.header-img{
+    margin: 5px 25px;
+}
+.header-content{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    color: var(--ligt-color);
+    /*flex-direction: row;*//*creo que esta instruccion esta por default*/
+}
+.header-content-text{
+    max-width: 500px;
+    color: var(--ligt-color);
+    display: flex;
+    flex-direction: column;
+}
+.header-content-btns{
+    margin-top: 50px;
+}
+.header-title{
+    font-size: 80px;
+    font-family: var(--header-title-font);
+
+}
+.header-subtitle{/*40:06*/
+    font-size: 40px;
+
+}
+/*para los iconos se busco " font awesone cdn " y se copio </> en este icono
+que es el link para vincular con el codigo en el head del html 
+las librerias en este enlace pero no abre con edge toca con opera https://cdnjs.com/libraries/font-awesome 
+se copiaron dos enlaces de la colecion de solidos
+1. https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+el link tag
+2. https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js
+se copio el script tag
+esos dos se agregaron al index
+3. se va a buscar font owesome icons, para iconos https://fontawesome.com/icons se va a la parte de busqueda y buscamos
+el icono para search pero tiene que ser igual a las librerias que agregamos
+las librerias que agregamos fueron las de todos all para que fuera mas fácil
+*/
+
+
+.btn{
+    color: var(--ligt-color);
+    padding: 15px 60px;
+    border: 2px solid var(--ligt-color);
+    text-decoration: none;
+    margin:0px 5px;
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+/*FIN DISEÑO HEADER*/
+
+
+/*DISEÑO HEADER RESPONSIVO*/
+
+
+.menu-movile{
+    
+    display: none;
+}
+@media(max-width:800px){
+    .menu-screen{
+        
+        display: none;
+    }
+    .menu-movile{
+        
+        display: flex;
+    }
+}
+@media(max-width:1100px){
+    .header-content{
+        flex-direction: column;
+    }
+    .header-content-text{
+        margin-left: 20px;
+    }
+    .header-title{
+        font-size: 30px;
+    }
+    .header-subtitle{/*40:06*/
+        font-size: 20px;
+    }
+    .header-content-text p{
+        font-size: 14px;
+    }
+    .btn{
+        padding: 10px 30px;
+    }
+    .header-img{
+        margin: 50px 10px;
+        width:95%;/*si se deja solo asi la imagen se deforma se agrega
+        el alto al 100%*/
+        height: 100%;
+        max-width: 500px;/*esto es para corregir que la imagen se ve grande en 
+        tamaños como una tablet, se obliga a qeu su anchura max sea esa al momento
+        de reducir el tamaño del navegador*/
+    }
+    
+
+}
+/*seccion tarjetas*/
+/*Cards Section*/
+.cards{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.card{
+    margin: 5px;
+    padding: 30px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card h5{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card p{
+    text-align: center;
+}    
+/*Products Section*/
+.products{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.title-section{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: var(--section-title-font);
+    border-bottom: 1px solid var(--secondary-color);/*se realizo esto para subrayar
+    ya que con el text-decoration la linea quedaba pegada al texto por eso se marco el borde 
+    inferior de la caja que contiene el h3*/
+    margin-bottom: 25px;
+}
+.products-container{
+    background-color: var(--ligt-color);
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    margin-bottom: 100px;
+}
+.product-card{
+    width:203px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+     
+}
+.product-card a{
+    background-color: var(--dark-color);
+    color: var(--ligt-color);
+    padding: 10px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+.btn-secondary{
+    color: var(--secondary-color);
+    padding: 15px 60px;
+    border: 2px solid var(--secondary-color);
+    text-decoration: none;
+    margin:0px 5px;
+}
+@media(max-width:1100px){/*como el contenedor tiene una anchura fija de 1100
+    para el diseño responcivo devemos cambiar esa regla*/
+    .products-container{
+       width: 96%;
+    }
+}
+/*End Products Section*/
+
+/*Banner Section*/
+.banner{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 70px;
+}
+.banner-content{
+
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.banner-content-text{
+    max-width: 500px;
+    color: var(--ligt-color);
+    display: flex;
+    flex-direction: column;
+}
+.banner-title{
+    font-size: 48px;
+    font-family: var(--banner-title-font);
+
+}
+.banner-subtitle{
+    font-size: 20px;
+    font-family: var(--banner-subtitle-font);
+
+} 
+.btn-primary-full{
+    color: var(--ligt-color);
+    padding: 15px 60px;
+    border: 2px solid var(--secondary-color);
+    text-decoration: none;
+    margin:0px 5px;
+    background-color: var(--secondary-color);
+}
+.btn-primary-full:hover{
+    color:var(--secondary-color);
+    background-color: var(--primary-color);
+} 
+@media(max-width:800px){
+    .banner-content{
+        flex-direction:column;
+    }
+}  
+/*End Banner Section*/
+
+/*Reviews Section*/
+
+.reviews{/*el titulo "Customer Review" se trabajo con la clase "title 
+    section" para que tuviera el mismo diseño que el titulo de la 
+    seccion de productos*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.reviews-container{
+    width: 800px;
+    
+}
+
+.reviews-container h4{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:800px){
+    .reviews-container{
+        width:96%
+    }
+}
+ 
+
+/*End Reviews Section*/
+
+/*Form Section*/
+.contact{
+    background-image: url(./imagenes/contact_g.jpg);
+    background-size: cover;/*ocupa todo el espacio*/
+    background-repeat: no-repeat;/*con el cover se deberia establecer 
+    que no se repita pero como buena practica es mejor especificarlo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+}
+.contact-form{
+    border: 1px solid var(--ligt-color);
+    padding: 50px;
+    width:  800px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-title-white{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: var(--section-title-font);
+    border-bottom: 1px solid var(--ligt-color);/*se realizo esto para subrayar
+    ya que con el text-decoration la linea quedaba pegada al texto por eso se marco el borde 
+    inferior de la caja que contiene el h3*/
+    margin-bottom: 25px;
+    color: var(--ligt-color);
+} 
+.contact-input { 
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color:transparent;
+    box-shadow: none;/*quita la sombra al ubicarce en el input*/
+    outline: none;/*quita la linea al ubicarce en el input*/
+    border: 1px solid var(--ligt-color);
+    color: var(--ligt-color);/*cambia el color de escritura dentro
+    de los input*/
+
+}
+.contact-textarea{
+    width: 100%;
+    height: 150px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color:transparent;
+    box-shadow: none;/*quita la sombra al ubicarce en el input*/
+    outline: none;/*quita la linea al ubicarce en el input*/
+    border: 1px solid var(--ligt-color);
+    color: var(--ligt-color);/*cambia el color de escritura dentro
+    de los input*/
+    resize: none;/*permite quitar la esquina para agrandar el cuadro de 
+    text area*/
+    display: flex;
+    align-items: center;
+    
+}
+/*cambiar el color de los PLACEHOLDER*/
+.contact-input::placeholder{
+    color: var(--ligt-color);
+    opacity: 1;
+}
+.contact-input::-moz-placeholder{/*para que aplique a mozila*/
+    color: var(--ligt-color);
+    opacity: 1;
+}
+.contact-textarea::placeholder{
+    color: var(--ligt-color);
+    opacity: 1;
+}
+.contact-textarea::-moz-placeholder{/*para que aplique a mozila*/
+    color: var(--ligt-color);
+    opacity: 1;
+}
+
+.contact-btn{
+    color: var(--ligt-color);
+    background-color: var(--secondary-color);
+    padding: 15px 60px;
+    border: 2px solid var(--secondary-color);
+    text-decoration: none;
+    max-width: 150px;
+    border-radius: 25px;
+    margin-top: 40px;
+    cursor: pointer;/*forzar que salga la manita para los botones*/
+
+}
+.contact-btn:hover{
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+@media(max-width:800px){
+    .contact-form{
+        width: 96%;
+    }
+}
+
+/*End Form Section*/
+
+/*Footer Section*/
+footer{
+    background-image: url(./imagenes/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.copyright{
+    width: 1100px;
+    color: var(--ligt-color);
+    border-top: 1px solid var(--ligt-color);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.footer-contect{
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    
+}
+.footer-card{
+    width: 270px;
+    padding: 20px;
+    color:var(--ligt-color)
+
+}  
+.footer-card h5{
+    font-size: 20px;
+}
+.footer-card p{
+    font-size: 12px;
+}
+.sub-input{
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: var(--section-title-font);
+}
+.sub-btn{
+    color: var(--ligt-color);
+    background-color: var(--secondary-color);
+    padding: 7px 30px;
+    border: 2px solid var(--secondary-color);
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;/*forzar que salga la manita para los botones*/
+
+}
+.sub-btn:hover{
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+.social-icons a{
+    color: var(--ligt-color);
+    font-size: 24px;
+    margin: 5px;
+}
+@media(max-width:1100px){
+    .footer-contect{
+        width: 96%;
+    }
+    .copyright{
+        width: 96%;
+    }
+}
+
+
+/*End Form Section*/
+/*15:19*/

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pruebas w3school</title>
+</head>
+<body>
+	<h2>Ejercicio de w3school</h2>
+	<!-- <p id="demo">Palabras del parrafo</p>
+	<button id="boton" onclick="funcion()">oprime para cambiar el parrafo</button> -->
+<!-- <script type="text/javascript">
+
+	function funcion(){
+		let texto = document.getElementById('demo').innerHTML;
+		let texto2 = texto.replace(/Palabras/g, "Lineas");
+		document.getElementById('demo').innerHTML= texto2;
+		document.getElementById('boton').innerHTML=`texto ha sido cambiado`;
+
+	}
+	
+</script> -->
+
+<!-- ejemplo replace all -->
+<!-- 
+<p id="demo">I love cats. Cats are very easy to love. Cats are very popular</p>
+<button onclick="cambiar()">oprima</button>
+
+ 
+ 
+<script type="text/javascript">
+ 
+ function cambiar() {
+ 	let texto = document.getElementById('demo').innerHTML;
+ 	texto = texto.replace("Cats","Dogs");
+ 	texto = texto.replaceAll("cats","dogs");
+ 	document.getElementById('demo').innerHTML=texto;
+ }
+</script>
+ -->
+
+ <!--  ejemplo the split().Method -->
+
+<h1>JavaScript String Methods</h1>
+<h2>The split().Method</h2>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+let text = "PARANGARICUTIRIMICUARO";
+const myArray = text.split("");
+console.log(myArray);
+
+let text1 = "";
+for (let i = 0; i< myArray.length; i++) {
+	text1 += myArray[i]+"<br>";
+}
+console.log(typeof text1);
+document.getElementById('demo').innerHTML=text1;
+
+
+	
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

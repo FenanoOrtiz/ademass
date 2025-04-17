@@ -1,0 +1,42 @@
+/*variable en CSS*/
+/*DECLARAR VARIABLES*/
+:root{
+    --color-primary:#2d3130;
+    --color-secondary:#af964a;
+    --color-bg:#333;
+    --font-title:caramel;
+    --font-text:sono;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+main{
+    width: 100vw;
+    height: 100vw;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: space-around;
+}
+h1, h2, h3, h4, h5, h6{
+    color: var(--color-primary);
+    font-family: var(--font-title);
+    font-size: 40px;
+}
+.card{
+    margin-top: 20px;
+    background-color: var(--color-secondary);
+    font-family: var(--color-secondary);
+    width: 180px;
+    height: 400px;
+    font-size:18px;
+}
+@font-face {
+    font-family: sono;
+    src: url('./fonts/Sono-ExtraBold.ttf');
+}
+@font-face {
+    font-family: caramel;
+    src: url('./fonts/Caramel.ttf');
+}

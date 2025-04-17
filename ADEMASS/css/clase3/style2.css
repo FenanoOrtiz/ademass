@@ -1,0 +1,51 @@
+#p1{
+    color:#1022c2;/*color de texto*/
+   /*tamaños de la caja minimo que se va ampliar de ser necesario*/
+    min-width:200px;/*ancho minimo, si el texto es mas grande es se extiende*/
+    min-height:40px;/*alto minimo*/
+    /*max-width: 150px;ancho maximo y alto maximo que puede tener la caja
+    max-height: 150px;*/
+    
+    background-color:rgba(0, 255, 255, 0.404);;
+    font-size: 22px;/*tamaño fuente*/
+    font-weight: bold;/*grososr de la fuente*/
+    text-decoration: underline;/*decoracion del texto*/
+    text-align:center ;/*alineacion*/
+    font-family:Arial, Helvetica, sans-serif;/*tipografia*/
+    text-transform:capitalize;/*mayuscula inicial, minuscula, todo mayuscula*/
+} 
+/*b{
+    color: black;
+}*/
+div, #p2{
+    padding: 20px;
+    border-radius: 10px;
+    background-color:rgba(0, 255, 255, 0.404);/*color de fondo*/
+    color: #1022c2;
+    /*dimenciones de la caja*/
+    min-width: 300px;
+    height: auto;
+    margin: 10px 10px;
+    font-weight:lighter;
+    display:inline-block;
+    border:#0066ff solid;
+    font-size: 20px; 
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    padding: 50px;
+    background-color:rgba(0, 255, 255, 0.404);
+}
+html{
+    background-color: rgba(0, 255, 255, 0.404);
+}
+div h3{
+    text-align: center;
+    font-size: 30px;
+}
+#p2{
+    width: 815px;
+    height: auto;
+    text-align: center;
+}
