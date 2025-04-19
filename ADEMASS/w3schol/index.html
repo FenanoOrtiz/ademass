@@ -35,6 +35,7 @@
 	<script>
 		const fruits = ["Banana", "Orange", "Apple", "Mango"];
 		document.getElementById('demo1').innerHTML = fruits;
+		
 		let fruitsResult = fruits.pop();
 		document.getElementById('demo2').innerHTML = fruits;
 		document.getElementById('demo3').innerHTML = `el elemento que se quito del array es ${fruitsResult}`;
@@ -61,8 +62,8 @@
 
 		let fruitsUnshift = fruits.unshift("Lemon");
 		document.getElementById('demo12').innerHTML = `se agrega al primer elemento Lemon, el array queda así: ${fruits}`;
-	document.getElementById('demo13').innerHTML = `unshift devuelve la cantidad de elementos con los que queda el array: ${fruitsUnshift}`;
-	
+		document.getElementById('demo13').innerHTML = `unshift devuelve la cantidad de elementos con los que queda el array: ${fruitsUnshift}`;
+
 </script>
 
 </body>
